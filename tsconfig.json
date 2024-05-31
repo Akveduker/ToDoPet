@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@components/*": ["./client/components/*"],
+      "@models/*": ["./server/models/*"],
+      "@server-routes/*": ["./server/routes/*"],
+      "@server-utils/*": ["./server/utils/*"],
+      "@server-types/*": ["./server/types/*"],
+      "@generic-types/*": ["./types/*"],
+      "@server-middlewares/*": ["./server/middleware/*"],
+      "@ui/*": ["./client/ui/*"],
+      "@pages/*": ["./client/pages/*"],
+      "@hooks/*": ["./client/hooks/*"],
+      "@client-utils/*": ["./client/utils/*"],
+      "@client-types/*": ["./client/types/*"],
+      "@api/*": ["./client/api/*"],
+      "@store/*": ["./client/store/*"]
+    },
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
